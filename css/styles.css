@@ -1,0 +1,245 @@
+/*Enlace a las fuentes de Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Hind+Madurai:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Estilos para el contenedor general*/
+.container {
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+/*Estilos para el encabezado*/
+header {
+    padding: 1.5rem 2rem;
+    background-color: #141B41;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.menu {
+    list-style: none;
+    font-family: 'Cabin';
+    font-size: 1.2rem;
+    display: flex;
+    gap: 40px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*Estilos de la sección main*/
+main {
+    background-color: #98B9F2;
+}
+
+.container-hero {
+    height: 600px;
+    padding: 20px;
+    margin: 0px 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items:center;
+    gap: 40px;
+}
+
+.container-hero img{
+    width: 100%;
+    height: 500px;
+}
+
+.hero-text {
+    width: 100%;
+}
+
+.hero-text h1 {
+    font-family: 'Cabin';
+    font-size: 3.3rem;
+    margin-bottom: 8px;
+}
+
+.hero-text p {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    font-family: 'Hind Madurai';
+}
+
+button {
+    padding: 1em 2.1em 1.1em;
+    border-radius: 4px;
+    margin: 8px;
+    border:none;
+    background-color: aquamarine;
+    color: black;
+    font-weight: 800;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow: 0em -0.2rem 0em #141B41 inset;
+}
+
+/*Estilos para el sección de ofertas*/
+.seccion-ofertas{
+    background-color: #b3cde0;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.container-ofertas-text h2 {
+    font-size: 2.5rem;
+    font-family: 'Cabin';
+}
+.container-ofertas-text p {
+    font-size: 1.5rem;
+    font-family: 'Hind Madurai';
+}
+
+.container-ofertas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    padding: 20px; 
+}
+
+.oferta-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.oferta-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*Sección de testimonios*/
+.seccion-testimonios {
+    font-family: 'Hind Madurai';
+    padding: 40px 0;
+    background: #f1f1f1;
+    color: #434343;
+    text-align: center;
+}
+
+.seccion-testimonios h2 {
+    font-size: 2rem;
+}
+
+.inner {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.border {
+    width: 250px;
+    height: 5px;
+    background: #6ab04c;
+    margin: 26px auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col {
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.testimonial {
+    background: #fff;
+    padding: 30px;
+}
+
+.testimonial p {
+    font-size: 1.2rem;
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.full-name {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.stars {
+    color: gold;
+    margin-bottom: 20px;
+}
+
+/*Footer*/
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+.footer-section p {
+    font-family: 'Hind Madurai';
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 8px;
+}
+
+.iconos-redes-sociales{
+    font-size: 2rem;
+    display: flex;
+    gap: 20px;
+}
